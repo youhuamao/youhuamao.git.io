@@ -590,6 +590,88 @@ color: red;&lt;br /&gt;
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">http://example.com/2022/08/27/utility/MarkDown/MarkDown/</guid>
+            <title>MarkDown简单使用</title>
+            <link>http://example.com/2022/08/27/utility/MarkDown/MarkDown/</link>
+            <category term="工具" scheme="http://example.com/categories/utility/" />
+            <category term="MarkDown" scheme="http://example.com/categories/utility/MarkDown/" />
+            <category term="MarkDown" scheme="http://example.com/tags/MarkDown/" />
+            <pubDate>Sat, 27 Aug 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1标题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1标题&#34;&gt;#&lt;/a&gt; 1: 标题&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 一级标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 二级标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;### 三级标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#### 四级标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;##### 五级标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;###### 六级标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;两个空格是换行&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;2字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2字体&#34;&gt;#&lt;/a&gt; 2: 字体&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;斜体&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;ctrl&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;i&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;加粗&lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;ctrl&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;b &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt;高亮显示&lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;高亮显示&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;删除线&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;删除线&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;em&gt;斜体&lt;/em&gt;&lt;br /&gt;
+ //ctrl+i&lt;br /&gt;
+&lt;strong&gt; 加粗&lt;/strong&gt;&lt;br /&gt;
+ //ctrl+b&lt;br /&gt;
+&lt;mark&gt; 高亮显示&lt;/mark&gt;&lt;br /&gt;
+ // 高亮显示&lt;br /&gt;
+&lt;s&gt;删除线&lt;/s&gt;&lt;br /&gt;
+ // 删除线&lt;/p&gt;
+&lt;h1 id=&#34;3列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3列表&#34;&gt;#&lt;/a&gt; 3: 列表&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;这是第一个&lt;/li&gt;
+&lt;li&gt;这是第二个&lt;/li&gt;
+&lt;li&gt;这是第三个&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;4引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4引用&#34;&gt;#&lt;/a&gt; 4: 引用&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;引用内容&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;继续引用&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;我还能再引&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;引用内容&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;继续引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我还能再引&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;5分割线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5分割线&#34;&gt;#&lt;/a&gt; 5: 分割线&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;分割线&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;分割线&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;（占全屏）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;// 分割线 1&lt;br /&gt;
+ 你是我的宝贝 ---&lt;br /&gt;
+ 你不是我的宝贝&lt;br /&gt;
+ // 分割线 2&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id=&#34;6传入图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6传入图片&#34;&gt;#&lt;/a&gt; 6: 传入图片&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;插入本地图片&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;！&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;图片名称&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;（图片路径）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;插入网络图片&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;7超链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7超链接&#34;&gt;#&lt;/a&gt; 7: 超链接&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;namei&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;wangzhi&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;8列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8列表&#34;&gt;#&lt;/a&gt; 8: 列表&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;无序列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; 一号&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; 二号&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; 三号&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;有序列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1.&lt;/span&gt; name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;我是一号&lt;/li&gt;
+&lt;li&gt;我是二号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;我不是一号
+&lt;ol&gt;
+&lt;li&gt;支持缩进
+&lt;ol&gt;
+&lt;li&gt;真的支持缩进&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;我不是二号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;表格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表格&#34;&gt;#&lt;/a&gt; 表格&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;语文&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;数学&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;英语&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;56&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;右对齐&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;左对齐&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;：&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;：&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;剧中对齐&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语文&lt;/th&gt;
+&lt;th&gt;数学&lt;/th&gt;
+&lt;th&gt;英语&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;td&gt;56&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;公式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公式&#34;&gt;#&lt;/a&gt; 公式&lt;/h1&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$$&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;公式&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$$&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;直接加公式&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;这里需要一个公式 $ $ &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;骗你的&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;在文中加入公式&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;crtl&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;katex-display&#34;&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34; display=&#34;block&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;/&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;/lim_{x \to \ infin}\frac{sin(t)}{x}=1
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:2.113em;vertical-align:-0.686em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.3361079999999999em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mrel mtight&#34;&gt;→&lt;/span&gt;&lt;span class=&#34;mspace mtight&#34;&gt;&lt;span class=&#34;mtight&#34;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.286108em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:1.427em;&#34;&gt;&lt;span style=&#34;top:-2.314em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.677em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.686em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这里需要一个公式 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;/&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;/lim_{x \to \ infin}\frac{sin(t)}{x}=1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.355em;vertical-align:-0.345em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.3361079999999999em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mrel mtight&#34;&gt;→&lt;/span&gt;&lt;span class=&#34;mspace mtight&#34;&gt;&lt;span class=&#34;mtight&#34;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.286108em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:1.01em;&#34;&gt;&lt;span style=&#34;top:-2.6550000000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.485em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mopen mtight&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mclose mtight&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; (骗你的)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">http://example.com/2022/08/27/front/html5/%E5%85%83%E7%B4%A0%E4%B8%8E%E7%BB%93%E6%9E%84/</guid>
             <title>初识HTML</title>
             <link>http://example.com/2022/08/27/front/html5/%E5%85%83%E7%B4%A0%E4%B8%8E%E7%BB%93%E6%9E%84/</link>
@@ -621,201 +703,27 @@ color: red;&lt;br /&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2022/08/27/front/html5/%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF/</guid>
-            <title>网页基本信息</title>
-            <link>http://example.com/2022/08/27/front/html5/%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF/</link>
+            <guid isPermalink="true">http://example.com/2022/08/27/front/html5/%E5%88%9D%E8%AF%86HTML/</guid>
+            <title>初识HTML</title>
+            <link>http://example.com/2022/08/27/front/html5/%E5%88%9D%E8%AF%86HTML/</link>
             <category term="前端" scheme="http://example.com/categories/front/" />
             <category term="html5" scheme="http://example.com/categories/front/html5/" />
             <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
             <pubDate>Sat, 27 Aug 2022 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h1&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;什么是html&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是html&#34;&gt;#&lt;/a&gt; 什么是 HTML&lt;/h1&gt;
+&lt;p&gt;Hyper Text Markup Language (超文本标记语言), 超文本包括：文字、图片、音频、视频、动画等&lt;/p&gt;
+&lt;h1 id=&#34;w3c&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#w3c&#34;&gt;#&lt;/a&gt; W3C&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;!-- 注释内容 --&amp;gt;&lt;/li&gt;
-&lt;li&gt;快捷键 Ctrl + /&lt;/li&gt;
+&lt;li&gt;World Wide Web Consortium (万维网联盟)&lt;/li&gt;
+&lt;li&gt;成立于 1994 年，Web 技术领域最权威和具影响力的国际中立性技术标准机构&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy53My5vcmcv&#34;&gt;http://www.w3.org/&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jaGluYXczYy5vcmcv&#34;&gt;http://www.chinaw3c.org/&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;基本信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本信息&#34;&gt;#&lt;/a&gt; 基本信息&lt;/h1&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;!&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; DOCTYPE&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;告诉浏览器&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;我们要使用什么规范 &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;!DOCTYPIE html&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;htmL Lang&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;en&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;!&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; head标签代表网页头部&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;head&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&amp;lt;!--meta 描述性标签，它用来描述我们网站的一些信息 -- &gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&amp;lt;!--meta - 般用来做 SE0--&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;meta charset&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;UTF-8&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;meta name&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;keywords&#34;&lt;/span&gt; content&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;可以通过什么关键词搜索到&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;meta name&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;description&#34;&lt;/span&gt; content&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;鼠标悬停时显示的描述内容&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&amp;lt;!-- title 网页标题 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;title&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;我的第一个网页&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;title&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;head&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;!&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; body标签代表网页主体&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;body&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Hello &lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; World!&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;body&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;html&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2022/08/27/front/html5/%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE/</guid>
-            <title>网页基本标签</title>
-            <link>http://example.com/2022/08/27/front/html5/%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE/</link>
-            <category term="前端" scheme="http://example.com/categories/front/" />
-            <category term="html5" scheme="http://example.com/categories/front/html5/" />
-            <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
-            <pubDate>Sat, 27 Aug 2022 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;标题标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题标签&#34;&gt;#&lt;/a&gt; 标题标签&lt;/h1&gt;
+&lt;h1 id=&#34;w3c标准包括&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#w3c标准包括&#34;&gt;#&lt;/a&gt; W3C 标准包括&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;h1&amp;gt; 一级标签 &amp;lt;/h1&amp;gt;&lt;/li&gt;
-&lt;li&gt;&amp;lt;h2&amp;gt; 二级标签 &amp;lt;/h2&amp;gt;&lt;/li&gt;
-&lt;li&gt;&amp;lt;h3&amp;gt; 三级标签 &amp;lt;/h3&amp;gt;&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;段落标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#段落标签&#34;&gt;#&lt;/a&gt; 段落标签&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;p&amp;gt; 两只老虎 两只老虎 两只老虎 &amp;lt;/p&amp;gt;&lt;/li&gt;
-&lt;li&gt;&amp;lt;p&amp;gt; 两只老虎 两只老虎 &amp;lt;/p&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;换行标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#换行标签&#34;&gt;#&lt;/a&gt; 换行标签&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;两只老虎 两只老虎 两只老虎 &amp;lt;br/&amp;gt;&lt;/li&gt;
-&lt;li&gt;两只老虎 两只老虎 &amp;lt;br/&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;水平线标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#水平线标签&#34;&gt;#&lt;/a&gt; 水平线标签&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;hr/&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;字体样式标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体样式标签&#34;&gt;#&lt;/a&gt; 字体样式标签&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;粗体 &amp;lt;strong&amp;gt; 内容 &amp;lt;/strong&amp;gt;&lt;/li&gt;
-&lt;li&gt;斜体 &amp;lt;em&amp;gt; 内容 &amp;lt;/em&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;特殊符号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特殊符号&#34;&gt;#&lt;/a&gt; 特殊符号&lt;/h1&gt;
-&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- 空格 &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;nbsp;&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- 大于号 &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;gt;&#34;&gt;&amp;amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- 小于号 &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;lt;&#34;&gt;&amp;amp;lt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- 版权符号 &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;copy;&#34;&gt;&amp;amp;copy;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
-&lt;li&gt;空格  &lt;/li&gt;
-&lt;li&gt;大于号 &amp;gt;&lt;/li&gt;
-&lt;li&gt;小于号 &amp;lt;&lt;/li&gt;
-&lt;li&gt;版权符号 ©&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;图像标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图像标签&#34;&gt;#&lt;/a&gt; 图像标签&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;img src=&amp;quot;path&amp;quot; alt=&amp;quot;text&amp;quot; title=&amp;quot;text&amp;quot; width=&amp;quot;x&amp;quot; height=&amp;quot;y&amp;quot;/&amp;gt;&lt;/li&gt;
-&lt;li&gt;鼠标悬停提示文字 title&lt;/li&gt;
-&lt;li&gt;图像高度 height&lt;/li&gt;
-&lt;li&gt;图像地址 src&lt;/li&gt;
-&lt;li&gt;图像的替代文字 text (图片加载不出来会显示)&lt;/li&gt;
-&lt;li&gt;图像宽度 width&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;链接标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#链接标签&#34;&gt;#&lt;/a&gt; 链接标签&lt;/h1&gt;
-&lt;h2 id=&#34;文字超链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文字超链接&#34;&gt;#&lt;/a&gt; 文字超链接&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;a href=&amp;quot;path&amp;quot; target=&amp;quot;目标窗口位置&amp;quot;&amp;gt; 链接文本或图像 &amp;lt;/a&amp;gt;&lt;/li&gt;
-&lt;li&gt;href 链接路径&lt;/li&gt;
-&lt;li&gt;target 链接在哪个窗口打开 _blank: 另起窗口打开  _self: 当前窗口打开&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;图像超链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图像超链接&#34;&gt;#&lt;/a&gt; 图像超链接&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;a href=&amp;quot;path&amp;quot; target=&amp;quot;目标窗口位置&amp;quot;&amp;gt;&lt;/li&gt;
-&lt;li&gt;&amp;lt;img src=&amp;quot;path&amp;quot; alt=&amp;quot;text&amp;quot; title=&amp;quot;text&amp;quot; width=&amp;quot;x&amp;quot; height=&amp;quot;y&amp;quot;/&amp;gt;&lt;/li&gt;
-&lt;li&gt;&amp;lt;/a&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;锚链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#锚链接&#34;&gt;#&lt;/a&gt; 锚链接&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;需要一个锚标记，使用 name 作为标记&lt;/li&gt;
-&lt;li&gt;&amp;lt;a name=&amp;quot;top&amp;quot;&amp;gt;dingbu&amp;lt;/a&amp;gt;&lt;/li&gt;
-&lt;li&gt;跳转到标记&lt;/li&gt;
-&lt;li&gt;&amp;lt;a herf=&amp;quot;#top&amp;quot;&amp;gt; 回到 dingbu&amp;lt;/a&amp;gt;&lt;/li&gt;
-&lt;li&gt;&amp;lt;a herf=&amp;quot;连接标签.html#top&amp;quot;&amp;gt; 跳转到另外页面的锚点 &amp;lt;/a&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;功能性链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#功能性链接&#34;&gt;#&lt;/a&gt; 功能性链接&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;邮件链接: mailto:&lt;/li&gt;
-&lt;li&gt;QQ 链接 百度 qq 推广&lt;/li&gt;
-&lt;li&gt;&amp;lt;a &lt;span class=&#34;exturl&#34; data-url=&#34;bWFpbHRvOmhlcmY9JTIybWFpbHRvOjIzMTUzMjkxNzNAcXEuY29t&#34;&gt;herf=&amp;quot;mailto:2315329173@qq.com&lt;/span&gt;&amp;quot;&amp;gt; 点击联系我 &amp;lt;/a&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;列表标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表标签&#34;&gt;#&lt;/a&gt; 列表标签&lt;/h1&gt;
-&lt;h2 id=&#34;什么是列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是列表&#34;&gt;#&lt;/a&gt; 什么是列表&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;列表就是信息资源的 - - 种展示形式。它可以使信息结构化和条理化，并以列表的样式显示出来，以便浏览者能更快捷地获得相应的信息&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;列表的分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表的分类&#34;&gt;#&lt;/a&gt; 列表的分类&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;有序列表 (1. 2. 3.)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;lt;ol&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt;Java&amp;lt;/1i&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt;Python&amp;lt;/li&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt; 运维 &amp;lt;/li&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt; 前端 &amp;lt;/li&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt;C/c++&amp;lt;/li&amp;gt;&lt;br /&gt;
-&amp;lt;/ol&amp;gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;无序列表（. . .）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;lt;ul&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt;Java&amp;lt;/1i&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt;Python&amp;lt;/li&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt; 运维 &amp;lt;/li&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt; 前端 &amp;lt;/li&amp;gt;&lt;br /&gt;
-&amp;lt;li&amp;gt;C/c++&amp;lt;/li&amp;gt;&lt;br /&gt;
-&amp;lt;/ul&amp;gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;定义列表&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;dl: 标签&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;dt : 列农名称&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;dd : 列表内容&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;lt;dl&amp;gt;&lt;br /&gt;
-&amp;lt;dt&amp;gt; 学科 &amp;lt;/dt&amp;gt;&lt;br /&gt;
-&amp;lt;dd&amp;gt;Java&amp;lt;/dd&amp;gt;&lt;br /&gt;
-&amp;lt;dd&amp;gt;Python&amp;lt;/dd&amp;gt;&lt;br /&gt;
-&amp;lt;dd&amp;gt;L inux&amp;lt;/dd&amp;gt;&lt;br /&gt;
-&amp;lt;dd&amp;gt;C&amp;lt;/dd&amp;gt;&lt;br /&gt;
-&amp;lt;dt&amp;gt; 位置 &amp;lt;/dt&amp;gt;&lt;br /&gt;
-&amp;lt;dd&amp;gt; 西安 &amp;lt;/dd&amp;gt;&lt;br /&gt;
-&amp;lt;dd&amp;gt; 重庆 &amp;lt;/dd&amp;gt;&lt;br /&gt;
-&amp;lt;dd&amp;gt; 新疆 &amp;lt;/dd&amp;gt;&lt;br /&gt;
-&amp;lt;/dl&amp;gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;表格标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表格标签&#34;&gt;#&lt;/a&gt; 表格标签&lt;/h1&gt;
-&lt;h2 id=&#34;为什么使用表格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么使用表格&#34;&gt;#&lt;/a&gt; 为什么使用表格&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;简单通用&lt;/li&gt;
-&lt;li&gt;结构稳定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;基本结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本结构&#34;&gt;#&lt;/a&gt; 基本结构&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;表格 table&lt;/li&gt;
-&lt;li&gt;单元格&lt;/li&gt;
-&lt;li&gt;行 tr rows&lt;/li&gt;
-&lt;li&gt;列 td&lt;/li&gt;
-&lt;li&gt;跨行 rowspan&lt;/li&gt;
-&lt;li&gt;跨列 colspan&lt;/li&gt;
-&lt;li&gt;&amp;lt;table&amp;gt;&lt;br /&gt;
-&amp;lt;tr&amp;gt;&lt;br /&gt;
-&amp;lt;td colspan=&amp;quot;4&amp;quot;&amp;gt;1-1&amp;lt;/td&amp;gt; #1-1 占四行&lt;br /&gt;
- &amp;lt;td&amp;gt;1-2&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;1-3&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;1-4&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;/tr&amp;gt;&lt;br /&gt;
-&amp;lt;tr&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;2-1&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;2-2&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;2-3&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;2- 4&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;/tr&amp;gt;&lt;br /&gt;
-&amp;lt;tr&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;3-1&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;3-2&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;3-3&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;3-4&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;/tr&amp;gt;&lt;br /&gt;
-&amp;lt;/table&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;媒体元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#媒体元素&#34;&gt;#&lt;/a&gt; 媒体元素&lt;/h1&gt;
-&lt;h2 id=&#34;音频元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#音频元素&#34;&gt;#&lt;/a&gt; 音频元素&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;audio&amp;gt;&amp;lt;/audio&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;视频频元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#视频频元素&#34;&gt;#&lt;/a&gt; 视频频元素&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;video src=&amp;quot;../resources/video/ 片头. mp4&amp;quot; controls autoplay&amp;gt;&amp;lt;/video&amp;gt;&lt;/li&gt;
-&lt;li&gt;src 地址&lt;/li&gt;
-&lt;li&gt;controls 播放，暂停，进度条 ...&lt;/li&gt;
-&lt;li&gt;autoplay 自动播放&lt;/li&gt;
+&lt;li&gt;结构化标准语言 (HTML、 XML)&lt;/li&gt;
+&lt;li&gt;表现标准语言 (CSS)&lt;/li&gt;
+&lt;li&gt;行为标准 (DOM、ECMAScript)&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
