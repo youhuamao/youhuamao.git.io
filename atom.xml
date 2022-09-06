@@ -587,6 +587,214 @@ color: red;&lt;br /&gt;
         <updated>2022-08-27T16:00:00.000Z</updated>
     </entry>
     <entry>
+        <id>http://example.com/2022/08/27/front/html5/%E5%88%9D%E8%AF%86HTML/</id>
+        <title>初识HTML</title>
+        <link rel="alternate" href="http://example.com/2022/08/27/front/html5/%E5%88%9D%E8%AF%86HTML/"/>
+        <content type="html">&lt;h1 id=&#34;什么是html&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是html&#34;&gt;#&lt;/a&gt; 什么是 HTML&lt;/h1&gt;
+&lt;p&gt;Hyper Text Markup Language (超文本标记语言), 超文本包括：文字、图片、音频、视频、动画等&lt;/p&gt;
+&lt;h1 id=&#34;w3c&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#w3c&#34;&gt;#&lt;/a&gt; W3C&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;World Wide Web Consortium (万维网联盟)&lt;/li&gt;
+&lt;li&gt;成立于 1994 年，Web 技术领域最权威和具影响力的国际中立性技术标准机构&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy53My5vcmcv&#34;&gt;http://www.w3.org/&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jaGluYXczYy5vcmcv&#34;&gt;http://www.chinaw3c.org/&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;w3c标准包括&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#w3c标准包括&#34;&gt;#&lt;/a&gt; W3C 标准包括&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;结构化标准语言 (HTML、 XML)&lt;/li&gt;
+&lt;li&gt;表现标准语言 (CSS)&lt;/li&gt;
+&lt;li&gt;行为标准 (DOM、ECMAScript)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="前端" scheme="http://example.com/categories/front/" />
+        <category term="html5" scheme="http://example.com/categories/front/html5/" />
+        <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+        <updated>2022-08-26T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2022/08/27/front/html5/%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE/</id>
+        <title>网页基本标签</title>
+        <link rel="alternate" href="http://example.com/2022/08/27/front/html5/%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE/"/>
+        <content type="html">&lt;h1 id=&#34;标题标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题标签&#34;&gt;#&lt;/a&gt; 标题标签&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;h1&amp;gt; 一级标签 &amp;lt;/h1&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;h2&amp;gt; 二级标签 &amp;lt;/h2&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;h3&amp;gt; 三级标签 &amp;lt;/h3&amp;gt;&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;段落标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#段落标签&#34;&gt;#&lt;/a&gt; 段落标签&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;p&amp;gt; 两只老虎 两只老虎 两只老虎 &amp;lt;/p&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;p&amp;gt; 两只老虎 两只老虎 &amp;lt;/p&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;换行标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#换行标签&#34;&gt;#&lt;/a&gt; 换行标签&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;两只老虎 两只老虎 两只老虎 &amp;lt;br/&amp;gt;&lt;/li&gt;
+&lt;li&gt;两只老虎 两只老虎 &amp;lt;br/&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;水平线标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#水平线标签&#34;&gt;#&lt;/a&gt; 水平线标签&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;hr/&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;字体样式标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体样式标签&#34;&gt;#&lt;/a&gt; 字体样式标签&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;粗体 &amp;lt;strong&amp;gt; 内容 &amp;lt;/strong&amp;gt;&lt;/li&gt;
+&lt;li&gt;斜体 &amp;lt;em&amp;gt; 内容 &amp;lt;/em&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;特殊符号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特殊符号&#34;&gt;#&lt;/a&gt; 特殊符号&lt;/h1&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- 空格 &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;nbsp;&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- 大于号 &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;gt;&#34;&gt;&amp;amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- 小于号 &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;lt;&#34;&gt;&amp;amp;lt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- 版权符号 &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;copy;&#34;&gt;&amp;amp;copy;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;空格  &lt;/li&gt;
+&lt;li&gt;大于号 &amp;gt;&lt;/li&gt;
+&lt;li&gt;小于号 &amp;lt;&lt;/li&gt;
+&lt;li&gt;版权符号 ©&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;图像标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图像标签&#34;&gt;#&lt;/a&gt; 图像标签&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;img src=&amp;quot;path&amp;quot; alt=&amp;quot;text&amp;quot; title=&amp;quot;text&amp;quot; width=&amp;quot;x&amp;quot; height=&amp;quot;y&amp;quot;/&amp;gt;&lt;/li&gt;
+&lt;li&gt;鼠标悬停提示文字 title&lt;/li&gt;
+&lt;li&gt;图像高度 height&lt;/li&gt;
+&lt;li&gt;图像地址 src&lt;/li&gt;
+&lt;li&gt;图像的替代文字 text (图片加载不出来会显示)&lt;/li&gt;
+&lt;li&gt;图像宽度 width&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;链接标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#链接标签&#34;&gt;#&lt;/a&gt; 链接标签&lt;/h1&gt;
+&lt;h2 id=&#34;文字超链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文字超链接&#34;&gt;#&lt;/a&gt; 文字超链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;a href=&amp;quot;path&amp;quot; target=&amp;quot;目标窗口位置&amp;quot;&amp;gt; 链接文本或图像 &amp;lt;/a&amp;gt;&lt;/li&gt;
+&lt;li&gt;href 链接路径&lt;/li&gt;
+&lt;li&gt;target 链接在哪个窗口打开 _blank: 另起窗口打开  _self: 当前窗口打开&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;图像超链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图像超链接&#34;&gt;#&lt;/a&gt; 图像超链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;a href=&amp;quot;path&amp;quot; target=&amp;quot;目标窗口位置&amp;quot;&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;img src=&amp;quot;path&amp;quot; alt=&amp;quot;text&amp;quot; title=&amp;quot;text&amp;quot; width=&amp;quot;x&amp;quot; height=&amp;quot;y&amp;quot;/&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;/a&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;锚链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#锚链接&#34;&gt;#&lt;/a&gt; 锚链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;需要一个锚标记，使用 name 作为标记&lt;/li&gt;
+&lt;li&gt;&amp;lt;a name=&amp;quot;top&amp;quot;&amp;gt;dingbu&amp;lt;/a&amp;gt;&lt;/li&gt;
+&lt;li&gt;跳转到标记&lt;/li&gt;
+&lt;li&gt;&amp;lt;a herf=&amp;quot;#top&amp;quot;&amp;gt; 回到 dingbu&amp;lt;/a&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;a herf=&amp;quot;连接标签.html#top&amp;quot;&amp;gt; 跳转到另外页面的锚点 &amp;lt;/a&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;功能性链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#功能性链接&#34;&gt;#&lt;/a&gt; 功能性链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;邮件链接: mailto:&lt;/li&gt;
+&lt;li&gt;QQ 链接 百度 qq 推广&lt;/li&gt;
+&lt;li&gt;&amp;lt;a &lt;span class=&#34;exturl&#34; data-url=&#34;bWFpbHRvOmhlcmY9JTIybWFpbHRvOjIzMTUzMjkxNzNAcXEuY29t&#34;&gt;herf=&amp;quot;mailto:2315329173@qq.com&lt;/span&gt;&amp;quot;&amp;gt; 点击联系我 &amp;lt;/a&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;列表标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表标签&#34;&gt;#&lt;/a&gt; 列表标签&lt;/h1&gt;
+&lt;h2 id=&#34;什么是列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是列表&#34;&gt;#&lt;/a&gt; 什么是列表&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;列表就是信息资源的 - - 种展示形式。它可以使信息结构化和条理化，并以列表的样式显示出来，以便浏览者能更快捷地获得相应的信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;列表的分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表的分类&#34;&gt;#&lt;/a&gt; 列表的分类&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;有序列表 (1. 2. 3.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lt;ol&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt;Java&amp;lt;/1i&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt;Python&amp;lt;/li&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt; 运维 &amp;lt;/li&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt; 前端 &amp;lt;/li&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt;C/c++&amp;lt;/li&amp;gt;&lt;br /&gt;
+&amp;lt;/ol&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;无序列表（. . .）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lt;ul&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt;Java&amp;lt;/1i&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt;Python&amp;lt;/li&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt; 运维 &amp;lt;/li&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt; 前端 &amp;lt;/li&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt;C/c++&amp;lt;/li&amp;gt;&lt;br /&gt;
+&amp;lt;/ul&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;定义列表&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dl: 标签&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dt : 列农名称&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dd : 列表内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lt;dl&amp;gt;&lt;br /&gt;
+&amp;lt;dt&amp;gt; 学科 &amp;lt;/dt&amp;gt;&lt;br /&gt;
+&amp;lt;dd&amp;gt;Java&amp;lt;/dd&amp;gt;&lt;br /&gt;
+&amp;lt;dd&amp;gt;Python&amp;lt;/dd&amp;gt;&lt;br /&gt;
+&amp;lt;dd&amp;gt;L inux&amp;lt;/dd&amp;gt;&lt;br /&gt;
+&amp;lt;dd&amp;gt;C&amp;lt;/dd&amp;gt;&lt;br /&gt;
+&amp;lt;dt&amp;gt; 位置 &amp;lt;/dt&amp;gt;&lt;br /&gt;
+&amp;lt;dd&amp;gt; 西安 &amp;lt;/dd&amp;gt;&lt;br /&gt;
+&amp;lt;dd&amp;gt; 重庆 &amp;lt;/dd&amp;gt;&lt;br /&gt;
+&amp;lt;dd&amp;gt; 新疆 &amp;lt;/dd&amp;gt;&lt;br /&gt;
+&amp;lt;/dl&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;表格标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表格标签&#34;&gt;#&lt;/a&gt; 表格标签&lt;/h1&gt;
+&lt;h2 id=&#34;为什么使用表格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么使用表格&#34;&gt;#&lt;/a&gt; 为什么使用表格&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;简单通用&lt;/li&gt;
+&lt;li&gt;结构稳定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;基本结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本结构&#34;&gt;#&lt;/a&gt; 基本结构&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;表格 table&lt;/li&gt;
+&lt;li&gt;单元格&lt;/li&gt;
+&lt;li&gt;行 tr rows&lt;/li&gt;
+&lt;li&gt;列 td&lt;/li&gt;
+&lt;li&gt;跨行 rowspan&lt;/li&gt;
+&lt;li&gt;跨列 colspan&lt;/li&gt;
+&lt;li&gt;&amp;lt;table&amp;gt;&lt;br /&gt;
+&amp;lt;tr&amp;gt;&lt;br /&gt;
+&amp;lt;td colspan=&amp;quot;4&amp;quot;&amp;gt;1-1&amp;lt;/td&amp;gt; #1-1 占四行&lt;br /&gt;
+ &amp;lt;td&amp;gt;1-2&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;1-3&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;1-4&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;/tr&amp;gt;&lt;br /&gt;
+&amp;lt;tr&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;2-1&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;2-2&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;2-3&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;2- 4&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;/tr&amp;gt;&lt;br /&gt;
+&amp;lt;tr&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;3-1&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;3-2&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;3-3&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;3-4&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;/tr&amp;gt;&lt;br /&gt;
+&amp;lt;/table&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;媒体元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#媒体元素&#34;&gt;#&lt;/a&gt; 媒体元素&lt;/h1&gt;
+&lt;h2 id=&#34;音频元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#音频元素&#34;&gt;#&lt;/a&gt; 音频元素&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;audio&amp;gt;&amp;lt;/audio&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;视频频元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#视频频元素&#34;&gt;#&lt;/a&gt; 视频频元素&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;video src=&amp;quot;../resources/video/ 片头. mp4&amp;quot; controls autoplay&amp;gt;&amp;lt;/video&amp;gt;&lt;/li&gt;
+&lt;li&gt;src 地址&lt;/li&gt;
+&lt;li&gt;controls 播放，暂停，进度条 ...&lt;/li&gt;
+&lt;li&gt;autoplay 自动播放&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="前端" scheme="http://example.com/categories/front/" />
+        <category term="html5" scheme="http://example.com/categories/front/html5/" />
+        <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+        <updated>2022-08-26T16:00:00.000Z</updated>
+    </entry>
+    <entry>
         <id>http://example.com/2022/08/27/front/html5/%E5%85%83%E7%B4%A0%E4%B8%8E%E7%BB%93%E6%9E%84/</id>
         <title>初识HTML</title>
         <link rel="alternate" href="http://example.com/2022/08/27/front/html5/%E5%85%83%E7%B4%A0%E4%B8%8E%E7%BB%93%E6%9E%84/"/>
@@ -610,47 +818,6 @@ color: red;&lt;br /&gt;
 &lt;li&gt;&amp;lt;iframe src=&amp;quot;&amp;quot;name=&amp;quot;hello&amp;quot; frameborder=&amp;quot;0&amp;quot; wi dth=&amp;quot;1000px&amp;quot; hei ght=&amp;quot;&#39;800px&#39;&amp;quot;&amp;gt;&amp;lt;/ iframe&amp;gt;&lt;br /&gt;
 &amp;lt;a href=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmt1YW5nc3R1ZHkuY29t&#34;&gt;https://blog.kuangstudy.com&lt;/span&gt;&amp;quot;target=&amp;quot;hello&amp;quot;&amp;gt; 点击跳转 &amp;lt;/a&amp;gt;&lt;br /&gt;
 #(在 iframe 中打开 https://blog.kuangstudy.com)&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <category term="前端" scheme="http://example.com/categories/front/" />
-        <category term="html5" scheme="http://example.com/categories/front/html5/" />
-        <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
-        <updated>2022-08-26T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2022/08/27/front/html5/%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF/</id>
-        <title>网页基本信息</title>
-        <link rel="alternate" href="http://example.com/2022/08/27/front/html5/%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF/"/>
-        <content type="html">&lt;h1 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;!-- 注释内容 --&amp;gt;&lt;/li&gt;
-&lt;li&gt;快捷键 Ctrl + /&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;基本信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本信息&#34;&gt;#&lt;/a&gt; 基本信息&lt;/h1&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;!&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; DOCTYPE&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;告诉浏览器&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;我们要使用什么规范 &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;!DOCTYPIE html&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;htmL Lang&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;en&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;!&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; head标签代表网页头部&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;head&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&amp;lt;!--meta 描述性标签，它用来描述我们网站的一些信息 -- &gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&amp;lt;!--meta - 般用来做 SE0--&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;meta charset&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;UTF-8&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;meta name&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;keywords&#34;&lt;/span&gt; content&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;可以通过什么关键词搜索到&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;meta name&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;description&#34;&lt;/span&gt; content&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;鼠标悬停时显示的描述内容&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&amp;lt;!-- title 网页标题 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;title&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;我的第一个网页&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;title&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;head&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;!&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; body标签代表网页主体&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;body&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Hello &lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; World!&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;body&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;html&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="前端" scheme="http://example.com/categories/front/" />
-        <category term="html5" scheme="http://example.com/categories/front/html5/" />
-        <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
-        <updated>2022-08-26T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2022/08/27/front/html5/%E5%88%9D%E8%AF%86HTML/</id>
-        <title>初识HTML</title>
-        <link rel="alternate" href="http://example.com/2022/08/27/front/html5/%E5%88%9D%E8%AF%86HTML/"/>
-        <content type="html">&lt;h1 id=&#34;什么是html&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是html&#34;&gt;#&lt;/a&gt; 什么是 HTML&lt;/h1&gt;
-&lt;p&gt;Hyper Text Markup Language (超文本标记语言), 超文本包括：文字、图片、音频、视频、动画等&lt;/p&gt;
-&lt;h1 id=&#34;w3c&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#w3c&#34;&gt;#&lt;/a&gt; W3C&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;World Wide Web Consortium (万维网联盟)&lt;/li&gt;
-&lt;li&gt;成立于 1994 年，Web 技术领域最权威和具影响力的国际中立性技术标准机构&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy53My5vcmcv&#34;&gt;http://www.w3.org/&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jaGluYXczYy5vcmcv&#34;&gt;http://www.chinaw3c.org/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;w3c标准包括&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#w3c标准包括&#34;&gt;#&lt;/a&gt; W3C 标准包括&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;结构化标准语言 (HTML、 XML)&lt;/li&gt;
-&lt;li&gt;表现标准语言 (CSS)&lt;/li&gt;
-&lt;li&gt;行为标准 (DOM、ECMAScript)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="前端" scheme="http://example.com/categories/front/" />
