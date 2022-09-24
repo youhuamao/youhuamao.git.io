@@ -14,7 +14,8 @@
         <title>Hexo + Shoka 主题 + vercel 搭建的属于自己的博客站点</title>
         <link rel="alternate" href="https://love.youhuamao.xyz/2022/09/22/tutorial/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
         <content type="html">&lt;p&gt;Hexo + Shoka 主题 + vercel 搭建的属于自己的博客站点&lt;br /&gt;
-全程记得要管理员权限&lt;/p&gt;
+全程记得要管理员权限&lt;br /&gt;
+部署到 vercel 要提前申请一个自己的域名&lt;/p&gt;
 &lt;h1 id=&#34;安装nodejsgithexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装nodejsgithexo&#34;&gt;#&lt;/a&gt; 安装 node.js，Git，Hexo&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMub3JnL2VuL2Rvd25sb2FkLw==&#34;&gt;Node.js 官网&lt;/span&gt;&lt;/li&gt;
@@ -29,7 +30,7 @@
 &lt;li&gt;Hexo 初始化&lt;br /&gt;
 第一个命令，如图所示则安装成功如果失败了就再输入一次，第二个命令表示安装 hexo 部署到 git page 的 deployer&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-deployer-git &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;[HN~{$BSD}0SL9`26B0(M&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ucG0uZWxlbWVjZG4uY29tL2FuemhpeXUtYmxvZ0AxLjEuNi9pbWcvcG9zdC9ibG9nLWNvbnN0cnVjdC85LnBuZw==&#34;&gt;(6.png&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-deployer-git &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&amp;lt;!-- &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ucG0uZWxlbWVjZG4uY29tL2FuemhpeXUtYmxvZ0AxLjEuNi9pbWcvcG9zdC9ibG9nLWNvbnN0cnVjdC85LnBuZw==&#34;&gt;&lt;/span&gt; --&amp;gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;本地查看效果&lt;/li&gt;
 &lt;/ul&gt;
@@ -111,8 +112,13 @@
  也就是说，所有主题的自定义配置均保存于 &amp;lt;root&amp;gt;/_config.shoka.yml 文件。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;弄到现在你的博客基本可以用了确实可以用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#弄到现在你的博客基本可以用了确实可以用&#34;&gt;#&lt;/a&gt; 弄到现在你的博客基本可以用了（确实可以用）&lt;/h1&gt;
-&lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
-</content>
+&lt;h1 id=&#34;将网站托管到vercel&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将网站托管到vercel&#34;&gt;#&lt;/a&gt; 将网站托管到 vercel&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;打开 vercel，用 GitHub 登录，点击 Add new，再点击 project，找到你的博客仓库点击仓库旁边的 import，等待部署完成&lt;/li&gt;
+&lt;li&gt;点击 Go to Dashboard，Settings，Domains，在 add 旁边新增一个域名，点击 add&lt;/li&gt;
+&lt;li&gt;之后需要进行解析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;有的人是Type Name Value，将其复制添加进你的域名即可&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;之后便是等待解析的完成&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;进入_config.yml，找到URL，将url后的网址修改成为你自己自定义的那个域名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="教程" scheme="https://love.youhuamao.xyz/categories/tutorial/" />
         <category term="搭建博客" scheme="https://love.youhuamao.xyz/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-09-21T16:00:00.000Z</updated>
