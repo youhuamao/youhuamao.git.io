@@ -9,7 +9,7 @@
         {
             "id": "https://love.youhuamao.xyz/2022/09/24/Java/Java%E5%9F%BA%E7%A1%80/%E6%96%B9%E6%B3%95/",
             "url": "https://love.youhuamao.xyz/2022/09/24/Java/Java%E5%9F%BA%E7%A1%80/%E6%96%B9%E6%B3%95/",
-            "title": "类与对象",
+            "title": "方法",
             "date_published": "2022-09-23T16:00:00.000Z",
             "content_html": "<h1 id=\"包\"><a class=\"anchor\" href=\"#包\">#</a> 包</h1>\n<ul>\n<li>在调用包中的类的时候，如果两个包的两个类名一样的，第一个使用 import 导入包名，但因为该包中的类已经被定义，所以其他包该类名在调用声明时，需要在前边加上包名 com.xiaoming.Dog dog1 = new com.xiaoming.Dog ();</li>\n<li>命名规则<br />\n只能包含数字、字母、下划线、 小圆点，但不能用数字开头，不能是关键字或保留字<br />\n般是小写字母 + 小圆点一般是 com. 公司名。项目名业务模块名，例如 com. sina.crm.utils</li>\n<li>常用的包<br />\n java.lang.* //lang 包是基本包， 默认引入，不需要再引入.<br />\njava.util.* //util 包，系统提供的工具包，工具类，使用 Scanner<br />\n<span class=\"exturl\" data-url=\"aHR0cDovL2phdmEubmV0\">java.net</span>.*  // 网络包，网络开发<br />\n java.awt.* // 是做 java 的界面开发，GUI</li>\n</ul>\n",
             "tags": [
