@@ -10,8 +10,54 @@
         </author>
         <description>这是一个人的博客</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 23 Oct 2022 00:00:00 +0800</pubDate>
-        <lastBuildDate>Sun, 23 Oct 2022 00:00:00 +0800</lastBuildDate>
+        <pubDate>Tue, 25 Oct 2022 00:00:00 +0800</pubDate>
+        <lastBuildDate>Tue, 25 Oct 2022 00:00:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://love.youhuamao.xyz/2022/10/25/Java/SSM/Mybatis/%E6%B3%A8%E8%A7%A3/</guid>
+            <title>注解</title>
+            <link>https://love.youhuamao.xyz/2022/10/25/Java/SSM/Mybatis/%E6%B3%A8%E8%A7%A3/</link>
+            <category term="学习Java" scheme="https://love.youhuamao.xyz/categories/Java/" />
+            <category term="SSM" scheme="https://love.youhuamao.xyz/categories/Java/SSM/" />
+            <category term="Mybatis" scheme="https://love.youhuamao.xyz/categories/Java/SSM/Mybatis/" />
+            <category term="java" scheme="https://love.youhuamao.xyz/tags/java/" />
+            <pubDate>Tue, 25 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;pre&gt;&lt;code&gt;&amp;lt;mappers&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;lt;!--        &amp;lt;mapper resource=&amp;quot;com/kuang/dao/UserMapper.xml&amp;quot;/&amp;gt;--&amp;gt;&lt;br /&gt;
+&amp;lt;mapper class=&amp;quot;com.kuang.dao.UserMapper&amp;quot;/&amp;gt;&lt;br /&gt;
+&amp;lt;/mappers&amp;gt;&lt;/p&gt;
+&lt;h1 id=&#34;面向接口编程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#面向接口编程&#34;&gt;#&lt;/a&gt; 面向接口编程&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;之前学过面向对象编程，也学习过接口，但在真正的开发中，很多时候会选择面向接口编程&lt;/li&gt;
+&lt;li&gt;** 根本原因: &lt;mark&gt;解耦&lt;/mark&gt;，可拓展，提高复用，分层开发中，上层不用管具体的实现，大家都遵守共同的标准，使得开发变得容易，规范性更好&lt;/li&gt;
+&lt;li&gt;在一个面向对象的系统中，系统的各种功能是由许许多多的不同对象协作完成的。在这种情况下，各个对象内部是如何实现自己的，对系统设计人员来讲就不那么重要了；&lt;/li&gt;
+&lt;li&gt;而各个对象之间的协作关系则成为系统设计的关键。小到不同类之间的通信，大到各模块之间的交互，在系统设&lt;br /&gt;
+计之初都是要着重考虑的，这也是系统设计的主要工作内容。面向接口编程就是指按照这种思想来编程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;关于接口的理解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于接口的理解&#34;&gt;#&lt;/a&gt; 关于接口的理解&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;接口从更深层次的理解，应是定义 (规范，约束) 与实现 (名实分离的原则) 的分离。&lt;/li&gt;
+&lt;li&gt;接口的本身反映了系统设计人员对系统的抽象理解。&lt;/li&gt;
+&lt;li&gt;接口应有两类:&lt;/li&gt;
+&lt;li&gt;第一类是对一个个体的抽象，它可对应为一个抽象体 (abstract class);&lt;/li&gt;
+&lt;li&gt;第二类是对一个个体某 - 方面的抽象，即形成一个抽象面 (interface) ;&lt;/li&gt;
+&lt;li&gt;一个体有可能有多个抽象面。抽象体与抽象面是有区别的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;三个面向区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三个面向区别&#34;&gt;#&lt;/a&gt; 三个面向区别&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;面向对象是指，我们考虑问题时，以对象为单位，考虑它的属性及方法.&lt;/li&gt;
+&lt;li&gt;面向过程是指，我们考虑问题时，以一个具体的流程 (事务过程) 为单位，考虑它的实现.&lt;/li&gt;
+&lt;li&gt;接口设计与非接口设计是针对复用技术而言的，与面向对象 (过程) 不是一个问题更多的体现就是对系统整体的架构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;使用注解开发&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用注解开发&#34;&gt;#&lt;/a&gt; 使用注解开发&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;注解在接口上实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;public interface UserMapper &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    @Select&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;select * from user&#34;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    List&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;User&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; getUsers&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;需要再核心配置文件中绑定接口！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;mappers&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;mapper &lt;span class=&#34;token assign-left variable&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;com.kuang.dao.UserMapper&#34;&lt;/span&gt;/&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;/mappers&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://love.youhuamao.xyz/2022/10/23/Java/SSM/Mybatis/%E6%97%A5%E5%BF%97/</guid>
             <title>日志</title>
@@ -1124,54 +1170,6 @@ pc -&amp;gt; next = pa?pa:pb 与 if（pa） pa   else pb; 一样&lt;/p&gt;
 &lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_169.png&#34; alt=&#34;img_169.png&#34; /&gt;&lt;br /&gt;
 &lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_170.png&#34; alt=&#34;img_170.png&#34; /&gt;&lt;br /&gt;
 &lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_171.png&#34; alt=&#34;img_171.png&#34; /&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://love.youhuamao.xyz/2022/10/16/computer-science/DataStructureandalgorithm/%E6%9F%A5%E6%89%BE/</guid>
-            <title>查找</title>
-            <link>https://love.youhuamao.xyz/2022/10/16/computer-science/DataStructureandalgorithm/%E6%9F%A5%E6%89%BE/</link>
-            <category term="计算机科学" scheme="https://love.youhuamao.xyz/categories/computer-science/" />
-            <category term="数据结构与算法" scheme="https://love.youhuamao.xyz/categories/computer-science/DataStructureandalgorithm/" />
-            <pubDate>Sun, 16 Oct 2022 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;顺序查找&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#顺序查找&#34;&gt;#&lt;/a&gt; 顺序查找&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_116.png&#34; alt=&#34;img_116.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_117.png&#34; alt=&#34;img_117.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_119.png&#34; alt=&#34;img_119.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_120.png&#34; alt=&#34;img_120.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;二分查找&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二分查找&#34;&gt;#&lt;/a&gt; 二分查找&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_121.png&#34; alt=&#34;img_121.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_122.png&#34; alt=&#34;img_122.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_125.png&#34; alt=&#34;img_125.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_124.png&#34; alt=&#34;img_124.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;二叉排序树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二叉排序树&#34;&gt;#&lt;/a&gt; 二叉排序树&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_126.png&#34; alt=&#34;img_126.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_127.png&#34; alt=&#34;img_127.png&#34; /&gt;&lt;/p&gt;
-&lt;ul class=&#34;gallery gallery&#34; data-height=&#34;750px&#34; data-height=&#34;750px&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;左子树比根小，右子树比根大&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_128.png&#34; alt=&#34;img_128.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_129.png&#34; alt=&#34;img_129.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_130.png&#34; alt=&#34;img_130.png&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;被删除的结点只有左子 树或者只有右子树，用其左子树或者右子树替换它 (结点替换)。&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_132.png&#34; alt=&#34;img_132.png&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;平衡二叉树avl树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平衡二叉树avl树&#34;&gt;#&lt;/a&gt; 平衡二叉树（AVL 树）&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_131.png&#34; alt=&#34;img_131.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_133.png&#34; alt=&#34;img_133.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_134.png&#34; alt=&#34;img_134.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;散列表的基本概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#散列表的基本概念&#34;&gt;#&lt;/a&gt; 散列表的基本概念&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_136.png&#34; alt=&#34;img_136.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_135.png&#34; alt=&#34;img_135.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_137.png&#34; alt=&#34;img_137.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_138.png&#34; alt=&#34;img_138.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_139.png&#34; alt=&#34;img_139.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;解决冲突&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决冲突&#34;&gt;#&lt;/a&gt; 解决冲突&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_140.png&#34; alt=&#34;img_140.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_141.png&#34; alt=&#34;img_141.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_142.png&#34; alt=&#34;img_142.png&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
