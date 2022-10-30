@@ -10,8 +10,110 @@
         </author>
         <description>这是一个人的博客</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 27 Oct 2022 00:00:00 +0800</pubDate>
-        <lastBuildDate>Thu, 27 Oct 2022 00:00:00 +0800</lastBuildDate>
+        <pubDate>Sun, 30 Oct 2022 00:00:00 +0800</pubDate>
+        <lastBuildDate>Sun, 30 Oct 2022 00:00:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://love.youhuamao.xyz/2022/10/30/Java/SSM/Mybatis/%E7%BC%93%E5%AD%98/</guid>
+            <title>缓存</title>
+            <link>https://love.youhuamao.xyz/2022/10/30/Java/SSM/Mybatis/%E7%BC%93%E5%AD%98/</link>
+            <category term="学习Java" scheme="https://love.youhuamao.xyz/categories/Java/" />
+            <category term="Java基础" scheme="https://love.youhuamao.xyz/categories/Java/Java%E5%9F%BA%E7%A1%80/" />
+            <category term="java" scheme="https://love.youhuamao.xyz/tags/java/" />
+            <pubDate>Sun, 30 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;查询 &lt;span class=&#34;token builtin class-name&#34;&gt;:&lt;/span&gt; 连接数据库，耗资源&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;一次查询的结果，给他暂存在一个可以直接取到的地方&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt; --&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;内存:缓存&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;我们再次查询相同数据的时候，直接走缓存，就不用走数据库了&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;什么是缓存 [Cache]?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;存在内存中的临时数据。&lt;/li&gt;
+&lt;li&gt;将用户经常查询的数据放在缓存 (内存) 中，用户去查询数据就不用从磁盘上 (关系型数据库数据文件) 查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;为什么使用缓存？&lt;br /&gt;
+ 减少和数据库的交互次数，减少系统开销，提高系统效率。&lt;/li&gt;
+&lt;li&gt;什么样的数据能使用缓存？&lt;br /&gt;
+ 经常查询并且不经常改变的数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;mybatis缓存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mybatis缓存&#34;&gt;#&lt;/a&gt; Mybatis 缓存&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;MyBatis 包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效&lt;br /&gt;
+率。&lt;/li&gt;
+&lt;li&gt;MyBatis 系统中默认定义了两级缓存：一级缓存和二级缓存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;默认情况下，只有一 - 级缓存开启。 (SqlSession 级别的缓存， 也称为本地缓存)&lt;/li&gt;
+&lt;li&gt;二级缓存需要手动开启和配置，他是基于 namespace 级别的缓存。&lt;/li&gt;
+&lt;li&gt;为了提高扩展性，MyBatis 定义了缓存接口 Cache。我们可以通过实现 Cache 接口来自定义二级缓存&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;一级缓存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一级缓存&#34;&gt;#&lt;/a&gt; 一级缓存&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;一级缓存也叫本地缓存: SqlSession&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;与数据库同一次会话期间查询到的数据会放在本地缓存中。&lt;/li&gt;
+&lt;li&gt;以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;测试步骤：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;开启日志&lt;/li&gt;
+&lt;li&gt;测试一个在 Sesion 中查询两次相同记录&lt;/li&gt;
+&lt;li&gt;查看日志输出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;缓存失效的情况&lt;/li&gt;
+&lt;li&gt;增删改操作，可能会改变原来的数据，所以必定会刷新缓存！&lt;/li&gt;
+&lt;li&gt;查询不同的 Mapper.xml&lt;/li&gt;
+&lt;li&gt;手动清理缓存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;sqlSession.clearCache&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;一级缓存小结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一级缓存小结&#34;&gt;#&lt;/a&gt; 一级缓存小结&lt;/h1&gt;
+&lt;p&gt;一级缓存默认是开启的， 只在一 - 次 SqlSession 中有效，也就是拿到连接到关闭连接这个区间段！&lt;br /&gt;
+ 一级缓存相当于一个 Map&lt;/p&gt;
+&lt;h1 id=&#34;二级缓存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二级缓存&#34;&gt;#&lt;/a&gt; 二级缓存&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;二级缓存也叫全局缓存，一 - 级缓存作用域太低了，所以诞生了二级缓存&lt;/li&gt;
+&lt;li&gt;基于 namespace 级别的缓存，- 个名称空间，对应一个二级缓存；&lt;/li&gt;
+&lt;li&gt;工作机制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;一个会话查询一 条数据，这个数据就会被放在当前会话的一 - 级缓存中；&lt;/li&gt;
+&lt;li&gt;如果当前会话关闭了，这个会话对应的一 - 级缓存就没了；但是我们想要的是，会话关闭了，一级缓存中的数据被保存到二级缓存中；&lt;/li&gt;
+&lt;li&gt;新的会话查询信息，就可以从二级缓存中获取内容；&lt;/li&gt;
+&lt;li&gt;不同的 mapper 查出的数据会放在自己对应的缓存 (map) 中；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;步骤&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;开启全局缓存&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;setting &lt;span class=&#34;token assign-left variable&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;cacheEnabled&#34;&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;true&#34;&lt;/span&gt;/&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; //显示的开启全局缓存&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;在要使用二级缓存的 Mapper 中开启&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;--在当前Mapper. xmL中使用二级缓存--&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;cache/&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;也可以自定义参数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;cache&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;eviction&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;FIFO&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;flushInterval&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;60000&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;512&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;read0nly&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;true&#34;&lt;/span&gt;/&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;测试&lt;br /&gt;
+问题：我们需要将实体类序列化！否则就会报错！&lt;br /&gt;
+Caused by: java. io. NotSerializableException: com.kuang.pojo.User&lt;br /&gt;
+ 解决办法：让实体类 implements Serializable&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;小结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小结&#34;&gt;#&lt;/a&gt; 小结:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;只要开启了二级缓存，在同一个 Mapper 下就有效 I&lt;/li&gt;
+&lt;li&gt;所有的数据都会先放在一级缓存中；&lt;/li&gt;
+&lt;li&gt;只有当会话提交，或者关闭的时候，才会提交到二级缓冲中！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;缓存原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓存原理&#34;&gt;#&lt;/a&gt; 缓存原理&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;/pic/java/huancunyuanli.png&#34; alt=&#34;缓存原理.png&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ehcahe&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ehcahe&#34;&gt;#&lt;/a&gt; Ehcahe&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;导包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;-- https://mvnrepository. com/ artifact/org. mybatis. caches/mybatis-ehcache --&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;dependency&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;groupId&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;org.mybatis.caches&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;/groupId&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;artifactId&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;mybatis-ehcache&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;/artifactId&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;version&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1.1&lt;/span&gt;.&lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;0&lt;/span&gt;&amp;lt;&lt;/span&gt;/version&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;/dependency&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;cache &lt;span class=&#34;token assign-left variable&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;org.mybatis.caches.ehcache&#34;&lt;/span&gt;/&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;ehcache.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;?xml &lt;span class=&#34;token assign-left variable&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;1.0&#34;&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;encoding&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;UTF-8&#34;&lt;/span&gt;?&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;ehcache xmlns:xsi&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;http://www.w3.org/2001/XMLSchema-instance&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         xsi:noNamespaceSchemaLocation&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;http://ehcache.org/ehcache.xsd&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         &lt;span class=&#34;token assign-left variable&#34;&gt;updateCheck&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;diskStore &lt;span class=&#34;token assign-left variable&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;./tmpdir/Tmp_EhCache&#34;&lt;/span&gt;/&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;defaultCache&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;eternal&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;maxElementsInMemory&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;10000&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;overflowToDisk&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;diskPersistent&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;timeToIdleSeconds&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;1800&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;timeToLiveSeconds&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;259200&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;memoryStoreEvictionPolicy&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;LRU&#34;&lt;/span&gt;/&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;cache&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;cloud_user&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;eternal&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;maxElementsInMemory&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;5000&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;overflowToDisk&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;diskPersistent&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;timeToIdleSeconds&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;1800&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;timeToLiveSeconds&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;1800&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token assign-left variable&#34;&gt;memoryStoreEvictionPolicy&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;LRU&#34;&lt;/span&gt;/&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;/ehcache&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://love.youhuamao.xyz/2022/10/27/Java/SSM/Mybatis/%E5%A4%9A%E5%AF%B9%E4%B8%80%E5%A4%84%E7%90%86/</guid>
             <title>多对一处理</title>
@@ -1084,89 +1186,6 @@ mchange-commons-java-0.2.19.jar&lt;/p&gt;
 &lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_84.png&#34; alt=&#34;img_84.png&#34; /&gt;&lt;br /&gt;
 &lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_86.png&#34; alt=&#34;img_86.png&#34; /&gt;&lt;br /&gt;
 &lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_85.png&#34; alt=&#34;img_85.png&#34; /&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://love.youhuamao.xyz/2022/10/16/computer-science/DataStructureandalgorithm/%E5%9B%BE/</guid>
-            <title>图</title>
-            <link>https://love.youhuamao.xyz/2022/10/16/computer-science/DataStructureandalgorithm/%E5%9B%BE/</link>
-            <category term="计算机科学" scheme="https://love.youhuamao.xyz/categories/computer-science/" />
-            <category term="数据结构与算法" scheme="https://love.youhuamao.xyz/categories/computer-science/DataStructureandalgorithm/" />
-            <pubDate>Sun, 16 Oct 2022 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;完全图：任意两个点都有一条边相连&lt;/p&gt;
-&lt;p&gt;稀疏图：有很少边或弧的图 (e&amp;lt;nlogn)&lt;/p&gt;
-&lt;p&gt;稠密图：有较多边或弧的图&lt;/p&gt;
-&lt;p&gt;网：边 / 弧带权的图&lt;/p&gt;
-&lt;p&gt;邻接：有边 / 弧相连的两个顶点之间的关系&lt;/p&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_87.png&#34; alt=&#34;img_87.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;路径：接续的边构成的顶点序列&lt;/p&gt;
-&lt;p&gt;路径长度：路径上边或弧的数目 / 权值之和&lt;/p&gt;
-&lt;p&gt;回路 (环): 第一一个顶点和最后一个顶点相同的路径&lt;/p&gt;
-&lt;p&gt;简单路径：除路径起点和终点可以相同外，其余顶点均不相同的路径&lt;/p&gt;
-&lt;p&gt;简单回路 (简单环): 除路径起点和终点相同外，其余顶点均不相同的路径&lt;/p&gt;
-&lt;p&gt;连通图 (强连通图)：在无 (有) 向图 G=( V, {E} ) 中，若对任何两个顶点 v、u 都存在从 v 到&lt;br /&gt;
- u 的路径 ，则称 G 是连通图 (强连通图)&lt;/p&gt;
-&lt;p&gt;权与网：图中边或弧所具有的相关数称为权。表明从一个顶点到另一个顶点的距离或耗费。带权&lt;br /&gt;
-的图称 为网。&lt;/p&gt;
-&lt;p&gt;连通分量 (强连通分量)：无向图 G 的极大连通子图称为 G 的连通分量&lt;/p&gt;
-&lt;p&gt;极大连通子图意思是：该子图是 G 连通子图，将 G 的任何不在该子图中的顶点加入，子图不再连通&lt;/p&gt;
-&lt;p&gt;有向图 G 的极大强连通子图称为 G 的强连通分量&lt;/p&gt;
-&lt;p&gt;极大强连通子图意思是：该子图是 G 的强连通子图，将 D 的任何不在该子图中的顶点加入，子图不&lt;br /&gt;
-再是强连通的&lt;/p&gt;
-&lt;p&gt;极小连通子图：该子图是 G 的连通子图，在该子图中删除任何一条边子图不再连通&lt;/p&gt;
-&lt;p&gt;生成树：包含无向图 G 所有顶点的极小连通子图&lt;/p&gt;
-&lt;p&gt;生成森林：对非连通图，由各个连通分量的生成树的集合&lt;/p&gt;
-&lt;h1 id=&#34;图的类型定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图的类型定义&#34;&gt;#&lt;/a&gt; 图的类型定义&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_89.png&#34; alt=&#34;img_89.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;数组邻接矩阵表示法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数组邻接矩阵表示法&#34;&gt;#&lt;/a&gt; 数组（邻接矩阵）表示法&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_90.png&#34; alt=&#34;img_90.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_88.png&#34; alt=&#34;img_88.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_91.png&#34; alt=&#34;img_91.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_92.png&#34; alt=&#34;img_92.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_93.png&#34; alt=&#34;img_93.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;邻接表表示法链式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#邻接表表示法链式&#34;&gt;#&lt;/a&gt; 邻接表表示法（链式）&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_94.png&#34; alt=&#34;img_94.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;图的邻接存储表示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图的邻接存储表示&#34;&gt;#&lt;/a&gt; 图的邻接存储表示&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_96.png&#34; alt=&#34;img_96.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_98.png&#34; alt=&#34;img_98.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_97.png&#34; alt=&#34;img_97.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_99.png&#34; alt=&#34;img_99.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_100.png&#34; alt=&#34;img_100.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;十字链表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#十字链表&#34;&gt;#&lt;/a&gt; 十字链表&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_101.png&#34; alt=&#34;img_101.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_103.png&#34; alt=&#34;img_103.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;深度优先遍历&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#深度优先遍历&#34;&gt;#&lt;/a&gt; 深度优先遍历&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_102.png&#34; alt=&#34;img_102.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;广度优先遍历dfs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#广度优先遍历dfs&#34;&gt;#&lt;/a&gt; 广度优先遍历（DFS）&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_104.png&#34; alt=&#34;img_104.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;图的应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图的应用&#34;&gt;#&lt;/a&gt; 图的应用&lt;/h1&gt;
-&lt;p&gt;生成树：所有顶点均由边连接在一起，但不存在回路的图&lt;/p&gt;
-&lt;h1 id=&#34;最小生成树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最小生成树&#34;&gt;#&lt;/a&gt; 最小生成树&lt;/h1&gt;
-&lt;p&gt;最小生成树：给定一个无向网络在该网的所有生成树中，使得各边权值之和最小的那棵生成树&lt;br /&gt;
-称为该网的最小生成树，也叫最小代价生成树。&lt;/p&gt;
-&lt;h1 id=&#34;构建最小生成树mst&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#构建最小生成树mst&#34;&gt;#&lt;/a&gt; 构建最小生成树 (MST)&lt;/h1&gt;
-&lt;p&gt;MST 性质：设 N = (V, E) 是一个连通网，U 是顶点集 V 的一个非空子集。若边 (u,v) 是一条&lt;br /&gt;
-具有最小权值的边，其中 u∈U，v∈（V-U) 则必存在一棵包含边 (u, v) 的最小生成树。&lt;/p&gt;
-&lt;h2 id=&#34;普里姆算法prim&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#普里姆算法prim&#34;&gt;#&lt;/a&gt; 普里姆算法（prim）&lt;/h2&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_105.png&#34; alt=&#34;img_105.png&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;克鲁斯卡尔kruskal&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#克鲁斯卡尔kruskal&#34;&gt;#&lt;/a&gt; 克鲁斯卡尔 (Kruskal)&lt;/h2&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_106.png&#34; alt=&#34;img_106.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;单源路径&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#单源路径&#34;&gt;#&lt;/a&gt; 单源路径&lt;/h1&gt;
-&lt;p&gt;单源最短路径 —— 用 Dijkstra (迪杰斯特拉) 算法&lt;br /&gt;
-所有顶点间的最短路径一用 Floyd (弗洛伊德) 算法&lt;/p&gt;
-&lt;h2 id=&#34;dijkstra-迪杰斯特拉算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dijkstra-迪杰斯特拉算法&#34;&gt;#&lt;/a&gt; Dijkstra (迪杰斯特拉) 算法&lt;/h2&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_107.png&#34; alt=&#34;img_107.png&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;floyd-弗洛伊德算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#floyd-弗洛伊德算法&#34;&gt;#&lt;/a&gt; Floyd (弗洛伊德) 算法&lt;/h2&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_108.png&#34; alt=&#34;img_108.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;拓扑排序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拓扑排序&#34;&gt;#&lt;/a&gt; 拓扑排序&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_109.png&#34; alt=&#34;img_109.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_110.png&#34; alt=&#34;img_110.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_111.png&#34; alt=&#34;img_111.png&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;关键路径&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关键路径&#34;&gt;#&lt;/a&gt; 关键路径&lt;/h1&gt;
-&lt;p class=&#34;gallery&#34; data-height=&#34;750px&#34;&gt;&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_112.png&#34; alt=&#34;img_112.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_114.png&#34; alt=&#34;img_114.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_113.png&#34; alt=&#34;img_113.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;/pic/shujujiegouyusuanfa/img_115.png&#34; alt=&#34;img_115.png&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
